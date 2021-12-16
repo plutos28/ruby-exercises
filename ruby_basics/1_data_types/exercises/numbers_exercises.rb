@@ -5,18 +5,22 @@ end
 
 def subtract(a, b)
   # return the result of subtracting b from a
+  a - b
 end
 
 def multiply(a, b)
   # return the result of multiplying a times b
+  a * b
 end
 
 def divide(a, b)
   # return the result of dividing a by b
+  a / b
 end
 
 def remainder(a, b)
   # return the remainder of dividing a by b using the modulo operator
+  a % b
 end
 
 def float_division(a, b)

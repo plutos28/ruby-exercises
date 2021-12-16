@@ -20,25 +20,25 @@ RSpec.describe 'Numbers Exercises' do
   describe 'multiplication exercise' do
     
     # remove the 'x' from the line below to unskip the test
-    xit 'multiplies two numbers' do
+    it 'multiplies two numbers' do
       expect(multiply(5, 5)).to eq(25)
     end
   end
 
   describe 'division exercise' do
 
-    xit 'divides two numbers' do
+    it 'divides two numbers' do
       expect(divide(25, 5)).to eq(5)
     end
   end
 
   describe 'modulus exercise' do
 
-    xit 'returns the remainder using modulo' do
+    it 'returns the remainder using modulo' do
       expect(remainder(25, 5)).to eq(0)
     end
 
-    xit 'returns the remainder when it is not 0' do
+    it 'returns the remainder when it is not 0' do
       expect(remainder(13, 5)).to eq(3)
     end
   end
