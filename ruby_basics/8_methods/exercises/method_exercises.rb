@@ -6,12 +6,17 @@
 # parameter: number (an integer)
 # return value: the number's ASCII character (https://www.ascii-code.com/)
 # hint: use Integer#chr
+def ascii_translator(number)
+  number.chr
+end
 
 
 # method name: #common_sports
 # parameters: current_sports and favorite_sports (both arrays)
 # return value: an array containing items in both arrays
-# hint: use Array#intersection
+def common_sports(current_sports, favorite_sports)
+  current_sports & favorite_sports
+end
 
 
 # method name: #alphabetical_list
