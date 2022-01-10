@@ -23,18 +23,29 @@ end
 # parameter: games (an array)
 # return value: games, alphabetically sorted and duplicates removed
 # hint: chain Array#sort and Array#uniq together
+def alphabetical_list(games)
+  games.sort().uniq()
+end
 
 
 # method name: #lucky_number
 # parameter: number (an integer) with default value of 7
 # return value: a string "Today's lucky number is <number>"
-
+def lucky_number(n=7)
+  "Today's lucky number is #{n}" 
+end
 
 # method name: #ascii_code
 # parameter: character (a string)
 # return value: the character's ordinal number
 # explicit return value: 'Input Error' if character's length does not equal 1
 # hint: use String#ord
+def ascii_code(character)
+  if character.empty? or character.length > 1
+    return 'Input Error'
+  end
+  character.ord  
+end
 
 
 # method name: #pet_pun
@@ -44,10 +55,21 @@ end
 # console output: if animal is 'dog', 'Dogs are paw-some!' (awesome)
 # console output: otherwise, "I think <animal>s have pet-tential!" (potential)
 # hint: use puts
-
+def pet_pun(animal)
+  case animal
+  when 'cat'
+    puts 'Cats are purr-fect!'
+  when 'dog'
+    puts 'Dogs are paw-some!'
+  else
+    puts "I think #{animal}s have pet-tential!"
+  end
+end
 
 # method name: #twenty_first_century?
 # parameter: year (an integer)
 # return value: true if the year is between 2001 - 2100, otherwise return false
 # hint: use Comparable#between?
-
+def twenty_first_century?(year)
+  year.between?(2001, 2100)
+end
